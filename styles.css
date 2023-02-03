@@ -1,6 +1,33 @@
 .container {
     display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px;
     gap: 50px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr fr 1fr
+}
+
+.sidebar {
+background-color: blue;
+grid-row: 1 / 6;
+
+}
+
+.header {
+background-color: red;
+grid-column: 2 / 6;
+}
+
+.projects {
+background-color: purple;
+grid-row: 2 / 6;
+grid-column: 2 / 5;
+}
+
+.announcements {
+background-color: aqua;
+grid-row: 2 / 4;
+grid-column: 4
+}
+
+.trending {
+background-color: yellow;
 }
