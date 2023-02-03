@@ -29,17 +29,23 @@ grid-row: 1 / 1
 
 .projects {
 background-color: purple;
+display: grid;
 grid-row: 2 / 6;
-grid-column: 2 / 5;
+grid-column: 2 / 4;
 /* another grid here? */
 }
 
 .announcements {
 background-color: aqua;
+/* display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr; */
 grid-row: 2 / 4;
-grid-column: 4
+grid-column: 4 / 4;
 }
 
 .trending {
 background-color: yellow;
+grid-row: 4 / 4;
+grid-column: 4 / 4;
 }
