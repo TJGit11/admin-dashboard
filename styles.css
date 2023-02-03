@@ -2,24 +2,36 @@
     display: grid;
     gap: 50px ;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr
 }
 
 .sidebar {
 background-color: blue;
-grid-row: 1 / 6;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-row: 1 / 9;
+}
 
+.sidebar ul{
+    list-style-type: none;
 }
 
 .header {
 background-color: red;
-grid-column: 2 / 6;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+grid-template-rows: 1fr 2fr 1fr;
+grid-column: 2 / 6 ;
+grid-row: 1 / 1
+/* another grid here? */
 }
 
 .projects {
 background-color: purple;
 grid-row: 2 / 6;
 grid-column: 2 / 5;
+/* another grid here? */
 }
 
 .announcements {
